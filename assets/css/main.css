@@ -163,7 +163,7 @@
 		line-height: 1.65;
 	}
 	/*  SB edit  */
-	body { margin: 10px auto; width: 90%; }
+	/* body { margin: 10px auto; width: 90%; } */
 
 
 		@media screen and (max-width: 1680px) {
@@ -237,7 +237,7 @@
 		margin: 0 0 2em 0;
 		padding: 0.5em 0 0.5em 2em;
 	}
-	blockquote { font-size: 160%;	font-style: italic; font-variant: small-caps; font-weight: 400;	color: #2F4F4F; }
+	/* blockquote { font-size: 160%;	font-style: italic; font-variant: small-caps; font-weight: 400;	color: #2F4F4F; } */
 
 	code {
 		background: #34363b;
@@ -252,7 +252,7 @@
 		-webkit-overflow-scrolling: touch;
 		margin: 0 0 2em 0;
 	}
-	pre { font-size: 120%; font-weight: 400; }
+	/* pre { font-size: 120%; font-weight: 400; } */
 
 		pre code {
 			display: block;
