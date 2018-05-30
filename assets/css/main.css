@@ -26,8 +26,6 @@
 
 	ol, ul { list-style: none; }
 
-	blockquote, q { quotes: none; }
-
 	blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
 
 	table {
@@ -154,6 +152,7 @@
 		}
 
 /* Type */
+	p, pre, footer, blockquote { font-family: Verdana, Geneva, sans-serif; }
 
 	body, input, select, textarea {
 		color: #a0a0a1;
@@ -168,10 +167,7 @@
 
 
 		@media screen and (max-width: 1680px) {
-
-			body, input, select, textarea {
-				font-size: 11pt;
-			}
+			body, input, select, textarea {	font-size: 110%; }
 
 		}
 
@@ -187,7 +183,7 @@
 		a:hover {
 			text-decoration: underline;
 			border-bottom-color: transparent;
-			color: #34a58e !important;
+			color: #47c5ab !important;
 		}
 
 	strong, b {
@@ -237,10 +233,10 @@
 
 	blockquote {
 		border-left: 4px #36383c;
-		font-style: italic;
 		margin: 0 0 2em 0;
 		padding: 0.5em 0 0.5em 2em;
 	}
+	blockquote { font-size: 160%;	font-style: italic; font-variant: small-caps; font-weight: 400;	line-height: 180%; color: #2F4F4F; }
 
 	code {
 		background: #34363b;
@@ -253,10 +249,9 @@
 
 	pre {
 		-webkit-overflow-scrolling: touch;
-		font-family: "Courier New", monospace;
-		font-size: 0.9em;
 		margin: 0 0 2em 0;
 	}
+	pre { font-size: 120%; font-weight: 400; line-height: 135%; }
 
 		pre code {
 			display: block;
@@ -286,6 +281,21 @@
 	.align-right {
 		text-align: right;
 	}
+
+p, ul { font-size: 120%; font-weight: 400; line-height: 150%; color: #4d8080; }
+
+nav ul, footer ul { font-size: 88%; font-family: Verdana, Geneva, sans-serif; padding: 0px; list-style: none; line-height: 100%; font-weight: bold; }
+nav ul li, footer ul li { display: inline; margin-right: 20px; }
+
+
+footer { border-top: 1px solid #d5d5d5; font-size: 85%; }
+
+
+
+	blockquote, q { quotes: none; }
+
+
+
 
 /* Button */
 
@@ -677,69 +687,28 @@
 
 /* List */
 
-	ol {
-		list-style: decimal;
-		margin: 0 0 2em 0;
-		padding-left: 1.25em;
-	}
+	ul { font-size: 120%; font-weight: 400; line-height: 150%; color: #4d8080; }
 
-		ol li {
-			padding-left: 0.25em;
-		}
+	nav ul, footer ul { font-size: 88%; font-family: Verdana, Geneva, sans-serif; padding: 0px; list-style: none; line-height: 100%; font-weight: bold; }
+	nav ul li, footer ul li { display: inline; margin-right: 20px; }
 
-	ul {
-		list-style: disc;
-		margin: 0 0 2em 0;
-		padding-left: 1em;
-	}
+	ol { list-style: decimal; margin: 0 0 2em 0; padding-left: 1.25em; }
+	ol li {	padding-left: 0.25em; }
 
-		ul li {
-			padding-left: 0.5em;
-		}
+	ul { list-style: disc; margin: 0 0 2em 0; padding-left: 1em; }
+	ul li { padding-left: 0.5em; }
+	
+	ul.alt { list-style: none; padding-left: 0; }
+	ul.alt li { border-top: solid 1px #36383c; padding: 0.5em 0; }
+	ul.alt li:first-child { border-top: 0; padding-top: 0; }
 
-		ul.alt {
-			list-style: none;
-			padding-left: 0;
-		}
+	ul.icons { cursor: default; list-style: none; padding-left: 0; }
+	ul.icons li { display: inline-block; padding: 0 1em 0 0; }
+	ul.icons li:last-child { padding-right: 0; }
+	ul.icons li .icon { color: #505051; }
+	ul.icons li .icon:before { font-size: 1.5em; }
 
-			ul.alt li {
-				border-top: solid 1px #36383c;
-				padding: 0.5em 0;
-			}
-
-				ul.alt li:first-child {
-					border-top: 0;
-					padding-top: 0;
-				}
-
-		ul.icons {
-			cursor: default;
-			list-style: none;
-			padding-left: 0;
-		}
-
-			ul.icons li {
-				display: inline-block;
-				padding: 0 1em 0 0;
-			}
-
-				ul.icons li:last-child {
-					padding-right: 0;
-				}
-
-				ul.icons li .icon {
-					color: #505051;
-				}
-
-					ul.icons li .icon:before {
-						font-size: 1.5em;
-					}
-
-		ul.actions {
-			cursor: default;
-			list-style: none;
-			padding-left: 0;
-		}
+	ul.actions { cursor: default; list-style: none; padding-left: 0; }
 
 			ul.actions li {
 				display: inline-block;
