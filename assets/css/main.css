@@ -1,5 +1,5 @@
-@import url(font-awesome.min.css);
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,400italic");
+/* @import url(font-awesome.min.css); */
+/* @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,400italic"); */
 
 /*
 	Multiverse by HTML5 UP
@@ -22,22 +22,13 @@
 		display: block;
 	}
 
-	body {
-		line-height: 1;
-	}
+	body { line-height: 1; }
 
-	ol, ul {
-		list-style: none;
-	}
+	ol, ul { list-style: none; }
 
-	blockquote, q {
-		quotes: none;
-	}
+	blockquote, q { quotes: none; }
 
-	blockquote:before, blockquote:after, q:before, q:after {
-		content: '';
-		content: none;
-	}
+	blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
 
 	table {
 		border-collapse: collapse;
@@ -138,9 +129,7 @@
 
 	}
 
-	body {
-		background: #242629;
-	}
+	body {	background: #242629; }
 
 		body.loading *, body.loading *:before, body.loading *:after {
 			-moz-animation: none !important;
@@ -174,6 +163,9 @@
 		letter-spacing: 0.025em;
 		line-height: 1.65;
 	}
+	/*  SB edit  */
+	body { margin: 20px auto; width: 80%; }
+
 
 		@media screen and (max-width: 1680px) {
 
@@ -188,12 +180,12 @@
 		-webkit-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 		-ms-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 		transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
-		border-bottom: dotted 1px;
 		color: #34a58e;
 		text-decoration: none;
 	}
 
 		a:hover {
+			text-decoration: underline;
 			border-bottom-color: transparent;
 			color: #34a58e !important;
 		}
@@ -203,73 +195,32 @@
 		font-weight: 300;
 	}
 
-	em, i {
-		font-style: italic;
-	}
+	em, i { font-style: italic; }
 
-	p {
-		margin: 0 0 2em 0;
-	}
+	p { margin: 0 0 2em 0; }
 
 	h1, h2, h3, h4, h5, h6 {
 		color: #ffffff;
-		font-weight: 400;
+    		font-family: Verdana, Geneva, sans-serif; 
 		letter-spacing: 0.1em;
 		line-height: 1.5;
 		margin: 0 0 1em 0;
-	}
-
-		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
-			color: inherit;
-			text-decoration: none;
 		}
+	h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { color: inherit; text-decoration: none;	}
 
-	h1 {
-		font-size: 2em;
-	}
-
-	h2 {
-		font-size: 1.25em;
-	}
-
-	h3 {
-		font-size: 1.1em;
-	}
-
-	h4 {
-		font-size: 1em;
-	}
-
-	h5 {
-		font-size: 0.9em;
-	}
-
-	h6 {
-		font-size: 0.7em;
-	}
+	h1 { font-size: 220%; font-style: normal; font-variant: normal; font-weight: 700; line-height: 248%; }
+	h2 { font-size: 160%; font-style: normal; font-variant: normal; font-weight: 700; line-height: 182%; }
+	h3 { font-size: 120%; font-style: normal; font-variant: normal; font-weight: 700; line-height: 138%; }
+	h4 { font-size: 100%; font-style: normal; font-variant: normal; font-weight: 700; line-height: 116%; }
+	h5 { font-size: 90%; font-style: normal; font-variant: normal; font-weight: 700; line-height: 100%; }
+	h6 { font-size: 70%; font-style: normal; font-variant: normal; font-weight: 700; line-height: 80%; }
 
 	@media screen and (max-width: 736px) {
-
-		h2 {
-			font-size: 1em;
-		}
-
-		h3 {
-			font-size: 0.9em;
-		}
-
-		h4 {
-			font-size: 0.8em;
-		}
-
-		h5 {
-			font-size: 0.7em;
-		}
-
-		h6 {
-			font-size: 0.7em;
-		}
-
+		h2 { font-size: 1.2em; }
+		h3 { font-size: 1em; }
+		h4 { font-size: 0.9em; }
+		h5 { font-size: 0.8em; }
+		h6 { font-size: 0.7em; }
 	}
 
 	sub {
