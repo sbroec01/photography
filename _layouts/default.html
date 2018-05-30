@@ -1,12 +1,35 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
-<head>
-    {% include header.html %}
-</head>
-<body>
-
-    {{ content }}
+	<head>
+        <!-- {% include header.html %} -->
+        <title>{{ page.title }}</title>
+		<!-- link to main stylesheet -->
+		<link rel="stylesheet" type="text/css" href="/css/main.css">
+	</head>
     
-    {% include footer.html %}
-</body>
+	<body>
+		<nav>
+    		<ul>
+        		<li><a href="/">Home</a></li>
+	        	<li><a href="/About">About</a></li>
+        		<li><a href="/Gallery">Gallery</a></li>
+        		<li><a href="/photography">Photography</a></li>
+        		<li><a href="/Blog">Blog</a></li>
+    		</ul>
+		</nav>
+        
+		<div class="container">
+
+            {{ content }}
+
+        </div><!-- /.container -->
+        
+        <!-- {% include footer.html %} -->
+		<footer>
+    		<ul>
+        		<li><a href="mailto:stephan@broecker.eu">email</a></li>
+        		<li><a href="https://github.com/sbroec01">github.com/sbroec01</a></li>
+			</ul>
+		</footer>
+	</body>
 </html>
