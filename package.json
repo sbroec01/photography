@@ -19,12 +19,12 @@
     "portfolio",
     "portfolio website"
   ],
-  "author": "Ram Patra",
+  "author": "Stephan Broecker",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ramswaroop/photography/issues"
+    "url": "https://github.com/sbroec01/photography/issues"
   },
-  "homepage": "https://github.com/ramswaroop/photography#readme",
+  "homepage": "https://github.com/sbroec01/photography#readme",
   "devDependencies": {
     "del": "^2.2.2",
     "gulp": "^3.9.1",
