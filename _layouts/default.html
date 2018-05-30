@@ -10,6 +10,7 @@
 	</head>
     
 	<body>
+		<div>
 		<nav>
     		<ul>
         		<li><a href="/">Home</a></li>
@@ -19,19 +20,16 @@
         		<li><a href="/Blog">Blog</a></li>
     		</ul>
 		</nav>
-        
+		</div>
+		
 		<div class="container">
 
-            {{ content }}
+            		{{ content }}
 
-        </div><!-- /.container -->
+        	</div><!-- /.container -->
         
-        {% include footer.html %}
-		<footer>
-    		<ul>
-        		<li><a href="mailto:stephan@broecker.eu">email</a></li>
-        		<li><a href="https://github.com/sbroec01">github.com/sbroec01</a></li>
-			</ul>
-		</footer>
 	</body>
+		
+        {% include footer.html %}
+
 </html>
