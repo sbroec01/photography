@@ -20,9 +20,11 @@ layout: default
         {% for image in site.static_files %}
         {% if image.path contains 'fulls' %}
         <article class="thumb">
+            <h6>
             <a href="{{ site.baseurl }}{{ site.image_fulls_loc }}/{{ image.name }}" class="image">
                 <img src="{{ site.baseurl }}{{ site.image_thumbs_loc }}/{{ image.name }}" alt=""
                      data-name="{{ image.name }}"/></a>
+            </h6>
         </article>
         {% endif %}
         {% endfor %}
